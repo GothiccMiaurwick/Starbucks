@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* font start */
+@font-face {
+  font-family: "Sodo-Sans Regular";
+  src: url(/font/SoDoSans-Regular.ttf);
+}
+/* font end  */
+
+/* global containers start */
+.footer-global-container {
+  padding: 25px 0px;
+  font-family: "Sodo-Sans Regular";
+  display: block;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1), 0 -2px 2px rgba(0, 0, 0, 0.06),
+    0 0 2px rgba(0, 0, 0, 0.07);
+}
+
+.footer-global-nav {
+  padding: 0px 42.5px;
+  font-size: 1.6rem;
+}
+/* global containers ends */
+
+/* containers start */
+.footer-nav-information-container {
+  display: flex;
+  justify-content: flex-start;
+}
+/* containers ends */
+
+/* Nav start */
+.footer-nav-text h2 {
+  margin: 0px 0px 25.5px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  width: 190px;
+  max-width: 190px;
+}
+
+.footer-nav-text2 {
+  margin-left: 34px;
+}
+
+.footer-nav-text2 h2 {
+  margin: 0px 0px 25.5px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  width: 190px;
+  max-width: 190px;
+  line-height: 1.5;
+}
+
+.footer-nav-text-ul {
+  display: inline-block;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.58);
+  font-size: 16.5px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.footer-nav-ul-link {
+  padding: 8.5px 0px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  display: block;
+  text-size-adjust: 100%;
+  width: 190px;
+}
+.footer-nav-section {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  padding: 34px 0px;
+}
+
+.footer-nav-section::before {
+  content: "";
+  display: block;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Nav ends */
+
+/* nav icons start */
+.footer-global-ul-icons {
+  display: flex !important;
+  height: 51px;
+}
+
+.footer-global-ul-icons li {
+  margin-right: 1rem;
+}
+
+.footer-nav-ul-icons-link {
+  width: 44px;
+}
+.footer-nav-ul-icons-link a {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.footer-nav-ul-icons-link img {
+  width: 32px;
+}
+
+/* nav icons ends */
+
+/* nav text final start */
+
+.footer-global-ul-text-final {
+  display: inline-block !important;
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer-ul-text-final-link {
+  padding: 0.8rem 0px;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.footer-ul-text-final-link:hover {
+  text-decoration: underline;
+}
+
+li {
+  display: list-item;
+}
+/* nav text final ends */
+
+/* Final text page star  */
+.final-text-page {
+  font-size: 14.875px;
+  padding: 1.6rem 0px;
+  color: rgba(0, 0, 0, 0.58);
+}
+
+/* Final text page end */
+
+/* Responsive Start */
+@media (max-width: 1240px) {
+  .footer-global-ul-icons li {
+    margin-right: 1.5rem;
+  }
+
+  .footer-ul-text-final-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .footer-ul-text-final-link {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-nav-ul-link {
+    font-size: 1.7rem;
+  }
+
+  .footer-nav-text h2 {
+    font-size: 2.1rem;
+  }
+
+  .footer-nav-text2 h2 {
+    font-size: 2.1rem;
+  }
+}
+
+/* MENU DESPLEGABLE FOOTER START  */
+
+/* dropdawn  */
+.nav--dropdown {
+  display: none;
+}
+
+.dropdown {
+  padding: 1em;
+
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+}
+
+
+.dropdown__list {
+  list-style: none;
+}
+
+/* Titulo central start */
+.dropdown__link {
+  display: flex;
+  margin: 0px 0px 17.5px 0px;
+  padding: 8.5px 0px;
+  font-size: 1.9rem;
+  font-weight: 100;
+  letter-spacing: -0.17px;
+  width: 190px;
+  max-width: 190px;
+  cursor: pointer;
+  list-style: none;
+
+  align-items: center;
+  gap: 0.6rem;
+
+  position: relative;
+}
+/* Titulo central final  */
+
+.dropdown__list:has(:checked) {
+  --rows: 1fr;
+  --rotate: rotate(180deg);
+}
+
+/* Imagen flechita start */
+.dropdown__arrow {
+  margin-left: auto;
+  transform: var(--rotate, 0);
+  transition: 0.2s transform;
+}
+/* Imagen flechita end  */
+
+
+
+/* Texto dropdown start */
+
+.dropdown__content {
+  padding: 8.5px 0px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  display: block;
+  text-size-adjust: 100%;
+  width: 190px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.58);
+  font-size: 16.5px;
+  line-height: 1.5;
+
+  display: grid;
+  grid-template-rows: var(--rows, 0fr);
+  transition: 0.3s grid-template-rows;
+}
+
+.dropdown__anchor {
+  padding: 8.5px 0px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  display: block;
+  text-size-adjust: 100%;
+  width: 190px;
+}
+
+/* Checkbox start */
+
+.dropdown__sup {
+  overflow: hidden;
+}
+
+.dropdown__check{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+/* Checkbox end */
+
+/* Texto dropdown end */
+
+/* dropdawn */
+
+/* MENU DESPLEGABLE FOOTER ENDS  */
+
+@media (max-width: 1023px) {
+
+  .nav--dropdown{
+    display: flex;
+  }
+
+  .footer-nav-ul-link {
+    font-size: 1.9rem;
+  }
+
+  .footer-nav-text,
+  .footer-nav-text2 {
+    display: none;
+  }
+
+  .footer-nav-information-container {
+    display: block;
+  }
+
+  .footer-global-nav {
+    padding: 0px 25.5px;
+  }
+}
+/* Responsive Ends  */

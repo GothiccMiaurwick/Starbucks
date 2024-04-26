@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+/* Font start */
+@font-face {
+  font-family: 'Sodo-Sans Bold';
+  src:url(/font/SoDoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Sodo-Sans Regular';
+  src: url(/font/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SoDoSans-SemiBold';
+  src: url(/font/SoDoSans-SemiBold.ttf);
+}
+/* Font end */
+
+/* Containers start*/
+
+.main-container {
+  display: block;
+}
+
+/* Containers end */
+
+/* Panels start */
+.main-panel-container {
+  margin: 34px 0px 34px 0px;
+}
+
+.main-panel-pre {
+  box-sizing: border-box;
+}
+
+.main-panel {
+  display: flex;
+}
+
+.main-panel-1 {
+  display: flex;
+  max-width: 676px;
+  width: 100%;
+  height: 586px;
+}
+
+.main-panel-1-2 {
+  display: flex;
+  width: 675.5px;
+  height: 394.031px;
+}
+
+.main-panel-2 {
+  background-color: #d5d0ea;
+  display: flex;
+  justify-content: center;
+  padding: 34px 51px 34px 51px;
+  align-items: center;
+  line-height: 1.5;
+  width: calc(100% * (1.9 / 2));
+}
+/* Panels end */
+
+/* text start */
+
+.main-panel-text {
+  text-align: center;
+  max-width: 83%;
+}
+.main-panel-text-h1 {
+  font-family: "Sodo-Sans Regular";
+  margin: 0px 0px 25.5px 0px;
+  font-weight: bold;
+}
+
+.main-panel-text-h1 span {
+  display: inline-flex;
+  font-size: x-large;
+  height: max-content;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #1e3932;
+}
+
+.main-panel-text-div {
+  font-family: "Sodo-Sans Regular";
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1e3932;
+  letter-spacing: normal;
+}
+
+.main-panel-text-button {
+  display: flex;
+  font-family: 'SoDoSans-SemiBold';
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 7px 16px;
+  margin-top: 34px;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.main-panel-text-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* text end */
+
+/* Condition start */
+
+.condition-global-container {
+  margin: 34px 0px 0px 0px;
+}
+
+.condition-container {
+  box-sizing: border-box;
+}
+
+.condition-pre {
+  display: flex !important;
+  padding: 34px 0px;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.condition-text-container {
+  padding: 0px 51px;
+}
+
+.condition-text-link {
+  text-decoration: underline;
+}
+
+.condition-text {
+  font-family: "Sodo-Sans Regular";
+  max-width: calc(1em * (calc(600 / 13)));
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+/* Condition ends */
+
+/* Responsive start */
+@media (max-width: 1326px) and (min-width: 571px) {
+   .main-panel-1 img {
+    max-width: 100%;
+    height: auto;
+  }
+   .main-panel-2 {
+    width: 90%; 
+  }
+  .main-panel-2 span{
+    font-size: 3rem;
+  } 
+
+  .main-panel-text-div {
+    font-size: 2rem;
+  }
+
+ .main-panel-1-2 img {
+  width: 510px;
+ }
+}
+
+/* Menu hamburguesa start*/
+@media (max-width: 767px) {
+  .navbar-menu a{
+    display: none;
+  }
+  
+  .navbar-menu-1 a{
+    display: none;
+  }
+
+  .navbar-text-lateral a {
+    display: none;
+  }
+
+  .navbar-text-lateral-span {
+    display: none;
+  }
+  
+}
+/* Menu hamburguesa end*/
+
+/* Responsive end */
+
+

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  width: fit-content;
+}
+
+/* Font start */
+@font-face {
+  font-family: 'Sodo-Sans Bold';
+  src:url(/font/SoDoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Sodo-Sans Regular';
+  src: url(/font/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SoDoSans-SemiBold';
+  src: url(/font/SoDoSans-SemiBold.ttf);
+}
+/* Font end */
+
+/* Navbar container start */
+
+.navbar-global {
+  display: block;
+  padding: 0px 42.5px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.220);
+  position: relative;
+}
+.navbar-global-container {
+  display: flex;
+}
+.navbar-text-container {
+  display: flex;
+  height: 102px;
+  align-items: center;
+  box-sizing: inherit;
+  text-transform: uppercase!important;
+}
+.navbar-container-seccion2 {
+  display: flex;
+  padding: 0px 0px 0px 472.734px;
+}
+
+.navabr-store-container {
+  display: flex;
+}
+
+.navbar-global-text-container {
+  display: flex;
+}
+
+.navbar-button-container {
+  display: flex;
+  align-items: center;
+}
+/* Navbar container end */
+/* 
+14.69 20.56 */
+
+/* Navbr icons start */
+.navbar-logo-container {
+  margin: 25.5px 42.5px 25.5px 0px;
+}
+
+.navbar-logo {
+  width: 51px;
+  height: 51px;
+}
+.navbar-marker {
+  /* align-items: center;
+  justify-content: center;
+  display: inline-flex; */
+  width: 32px;
+  height: 32px;
+  padding: 0px 8.5px 0px 0px;
+}
+/* Navbr icons end */
+
+/* Navbar text start */
+.navbar-text-global {
+  display: flex;
+ flex-grow: 1;
+}
+
+.navbar-menu {
+  margin: 0px 0px 0px 25.5px;
+  display: inline-block;
+}
+
+a{ 
+  color: currentColor;
+}
+
+.navbar-menu-1{
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar-text-1 {
+  font-family: 'Sodo-Sans Bold';
+  display: flex;
+  height: auto;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+
+/* 472.734px */
+
+.navbar-text-2 {
+  display: flex;
+  align-items: center;
+  font-family: 'SoDoSans-SemiBold';
+  font-size: 1.4rem;
+  margin-left: auto;
+}
+
+.navbar-text-lateral {
+  display: flex;
+  align-items: center;
+}
+.navbar-text-lateral-span {
+  margin: 0px 42.5px 0px 0px;
+  align-self: stretch;
+}
+.navbar-text-lateral-span a{ 
+  display: flex;
+  align-items: center;
+  padding: 0px 17px 0px 0px;
+}
+
+.navbar-text-lateral-div {
+  display: inline-flex;
+  font-weight: 500;
+}
+
+.navbar-text-menu {
+  padding: 0px;
+}
+
+.navbar-store {
+  padding: 0px;
+}
+
+
+.navbar-marker-text{
+  font-size: 110%;
+}
+/* Navbar text end */
+
+/* Navbar Button start */
+
+.navbar-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 7px 16px;
+  margin: 0px 17px 0px 0px;
+  height: 2.3em;
+  font-weight: bold;
+}
+
+.navbar-btn-2 {
+  display: flex;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-weight: bold;
+  height: 2.3em;
+  min-width: 0%;
+  min-height: 0%;
+}
+/* Navbar Button end */
+
+
+
+/* RESPONSIVE START */
+
+@media (max-width: 1040px) {
+  .navbar-text-1 {
+    font-size: 1.6rem;
+  }
+
+  .navbar-btn, .navbar-btn-2 {
+    font-size: 1.6rem;
+  }
+}
+/* RESPONSIVE ENDS */
