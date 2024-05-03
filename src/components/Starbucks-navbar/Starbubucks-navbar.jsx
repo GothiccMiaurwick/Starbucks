@@ -52,9 +52,9 @@ export function StarbucksNavBar({}) {
                 </div>
               </div>
 
-              <div>
+              {/* Dropdown menu start */}
               
-              </div>
+              {/* Dropdown menu ends */}
             </div>
           </div>
         </div>
