@@ -1,6 +1,18 @@
 import "./Starbucks-navbar.css";
+import {Link} from "react-scroll";
+import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
+import React, {useState} from "react";
 
 export function StarbucksNavBar({}) {
+  // State to manage the navbar's visibility
+  const [nav, setNav] = useState(false);
+
+  // Toggle function to handle the navbar's display
+  const handleNav = () => {
+    setNav(!nav);
+  };
+  // Array containing navigation items
+
   return (
     <>
       <nav className="navbar">
@@ -15,21 +27,22 @@ export function StarbucksNavBar({}) {
                 />
               </div>
             </div>
+            {/* Menus text start*/}
             <div className="navbar-text-global">
-              <div className="navbar-text-container">
+              <div className="flex items-center uppercase">
                 <ul className="navbar-text-1">
-                  <li className="navbar-menu-1">
-                    <a href="">Menu</a>
-                  </li>
-                  <li className="navbar-menu">
-                    <a href="">Rewards</a>
-                  </li>
-                  <li className="navbar-menu">
-                    <a href="">Gift cards</a>
-                  </li>
+                  <Link spy={true} smooth={true} to="Menu">
+                    <li className="my-4 py-4 text-2xl">Menu</li>
+                  </Link>
+                  <Link spy={true} smooth={true} to="Rewards">
+                    <li className="my-4 py-4 ml-10  text-2xl">Rewards</li>
+                  </Link>
+                  <Link spy={true} smooth={true} to="Gift Cards">
+                    <li className="my-4 py-4 ml-10  text-2xl">Gift Cards</li>
+                  </Link>
                 </ul>
               </div>
-              <div className="navbar-text-2">
+              <div className="ml-auto flex justify-center">
                 <div className="navbar-text-lateral">
                   <span className="navbar-text-lateral-span">
                     <a href="">
@@ -40,22 +53,102 @@ export function StarbucksNavBar({}) {
                           className="navbar-marker"
                         />
                       </div>
-                      <p className="navbar-marker-text">Find a store</p>
+                      <p className="navbar-marker-text text-2xl font-semibold">
+                        Find a store
+                      </p>
                     </a>
                   </span>
-                  <a className="navbar-btn" href="#">
+                  <a
+                    className="navbar-btn text-2xl bg-transparent font-semibold flex items-center"
+                    href="#"
+                  >
                     Sign in
                   </a>
-                  <a className="navbar-btn-2" href="#">
+                  <a
+                    className="navbar-btn-2 text-2xl flex bg-black font-semibold items-center"
+                    href="#"
+                  >
                     Join now
                   </a>
                 </div>
               </div>
-
-              {/* Dropdown menu start */}
-              
-              {/* Dropdown menu ends */}
             </div>
+            {/* menu text end */}
+            {/* Dropdown menu start */}
+            <div className="bg-transparent flex justify-between items-center max-w-[1240px] ml-auto px-4 text-gray cursor-pointer">
+              {/* Mobile Navigation Icon */}
+              <div onClick={handleNav} className="block md:hidden item-middle">
+                {nav ? (
+                  <AiOutlineClose size={20} />
+                ) : (
+                  <AiOutlineMenu size={21} />
+                )}
+              </div>
+
+              {/* Mobile Navigation Menu */}
+              <div
+                className={
+                  nav
+                    ? " sb-mask sb-hamburgerNav__mask scr"
+                    : ""
+                }
+              ></div>
+              <div>
+                <ul
+                  className={
+                    nav
+                      ? "fixed md:hidden right-0 top-per w-[80%] h-full bg-[#ffffff] ease-in-out duration-500 box-per pt-14 font-per overflow-y-hidden draweropened"
+                      : "ease-in-out h-full w-[80%] duration-500 fixed top-per right-[-100%] font-per"
+                  }
+                >
+                  {/* Mobile Navigation Items */}
+                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                    Menu
+                  </li>
+                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                    Rewards
+                  </li>
+                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                    Gift Cards
+                  </li>
+                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal ">
+                    <hr className="box-per h1-min p-2" />
+                  </li>
+                  {/* Buttons */}
+                  <div className="">
+                    <div className="flex align-middle ">
+                      <a
+                        className="navbar-btn text-2xl bg-transparent font-semibold flex items-center ml-12"
+                        href="#"
+                      >
+                        Sign in
+                      </a>
+                      <a
+                        className="navbar-btn-2 text-2xl flex bg-black font-semibold items-center"
+                        href="#"
+                      >
+                        Join now
+                      </a>
+                    </div>
+                    <span className="navbar-text-lateral-span">
+                        <a className="ml-10 mt-5" href="">
+                          <div className="navbar-text-lateral-div">
+                            <img
+                              src="../public/marker.svg"
+                              alt="marker"
+                              className="navbar-marker"
+                            />
+                          </div>
+                          <p className="navbar-marker-text text-2xl font-semibold">
+                            Find a store
+                          </p>
+                        </a>
+                      </span>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            {/* Dropdown menu ends */}
           </div>
         </div>
       </nav>

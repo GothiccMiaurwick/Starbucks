@@ -317,8 +317,6 @@ const StarbucksFooter = () => {
 
           <hr className="footer-nav-section" />
 
-          <hr />
-
           <ul className="footer-global-ul-icons">
             <li>
               <a className="footer-nav-ul-icons-link" href="">

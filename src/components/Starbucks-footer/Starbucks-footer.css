@@ -83,8 +83,8 @@ ul {
   width: 190px;
 }
 .footer-nav-section {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
+  border: 0;
+  margin: 0;
   padding: 34px 0px;
 }
 
@@ -312,4 +312,33 @@ li {
     padding: 0px 25.5px;
   }
 }
+
+
+/* 720x1280 */
+
+@media (width: 720px) {
+  .dropdown__arrow {
+    position: relative;
+    left: 100%;
+  }
+}
+
+/* 360x640 */
+
+@media (width: 360px) {
+  .dropdown__arrow {
+    position: relative;
+  }
+  
+  .main-panel-2 {
+    width: auto;
+  }
+
+  .dropdown__arrow {
+    position: relative;
+    left: 100%;
+  }
+}
+
+
 /* Responsive Ends  */

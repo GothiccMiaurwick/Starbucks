@@ -11,19 +11,25 @@ html {
   width: fit-content;
 }
 
+body{
+  &:has(.draweropened) {
+    overflow: hidden;
+  }
+}
+
 /* Font start */
 @font-face {
-  font-family: 'Sodo-Sans Bold';
-  src:url(/font/SoDoSans-Bold.ttf);
+  font-family: "Sodo-Sans Bold";
+  src: url(/font/SoDoSans-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Sodo-Sans Regular';
+  font-family: "Sodo-Sans Regular";
   src: url(/font/SoDoSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'SoDoSans-SemiBold';
+  font-family: "SoDoSans-SemiBold";
   src: url(/font/SoDoSans-SemiBold.ttf);
 }
 /* Font end */
@@ -33,19 +39,13 @@ html {
 .navbar-global {
   display: block;
   padding: 0px 42.5px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.220);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
   position: relative;
 }
 .navbar-global-container {
   display: flex;
 }
-.navbar-text-container {
-  display: flex;
-  height: 102px;
-  align-items: center;
-  box-sizing: inherit;
-  text-transform: uppercase!important;
-}
+
 .navbar-container-seccion2 {
   display: flex;
   padding: 0px 0px 0px 472.734px;
@@ -64,8 +64,6 @@ html {
   align-items: center;
 }
 /* Navbar container end */
-/* 
-14.69 20.56 */
 
 /* Navbr icons start */
 .navbar-logo-container {
@@ -77,9 +75,6 @@ html {
   height: 51px;
 }
 .navbar-marker {
-  /* align-items: center;
-  justify-content: center;
-  display: inline-flex; */
   width: 32px;
   height: 32px;
   padding: 0px 8.5px 0px 0px;
@@ -89,7 +84,7 @@ html {
 /* Navbar text start */
 .navbar-text-global {
   display: flex;
- flex-grow: 1;
+  flex-grow: 1;
 }
 
 .navbar-menu {
@@ -97,29 +92,27 @@ html {
   display: inline-block;
 }
 
-a{ 
+a {
   color: currentColor;
 }
 
-.navbar-menu-1{
+.navbar-menu-1 {
   display: inline-block;
   list-style: none;
 }
 
 .navbar-text-1 {
-  font-family: 'Sodo-Sans Bold';
+  font-family: "Sodo-Sans Bold";
   display: flex;
   height: auto;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
 }
 
-/* 472.734px */
-
 .navbar-text-2 {
   display: flex;
   align-items: center;
-  font-family: 'SoDoSans-SemiBold';
+  font-family: "SoDoSans-SemiBold";
   font-size: 1.4rem;
   margin-left: auto;
 }
@@ -130,9 +123,8 @@ a{
 }
 .navbar-text-lateral-span {
   margin: 0px 42.5px 0px 0px;
-  align-self: stretch;
 }
-.navbar-text-lateral-span a{ 
+.navbar-text-lateral-span a {
   display: flex;
   align-items: center;
   padding: 0px 17px 0px 0px;
@@ -151,8 +143,7 @@ a{
   padding: 0px;
 }
 
-
-.navbar-marker-text{
+.navbar-marker-text {
   font-size: 110%;
 }
 /* Navbar text end */
@@ -160,40 +151,48 @@ a{
 /* Navbar Button start */
 
 .navbar-btn {
-  background-color: transparent;
   border: 1px solid black;
   border-radius: 20px;
   padding: 7px 16px;
   margin: 0px 17px 0px 0px;
   height: 2.3em;
-  font-weight: bold;
 }
 
 .navbar-btn-2 {
-  display: flex;
-  background-color: black;
   color: white;
   border: 1px solid black;
   border-radius: 20px;
   padding: 7px 16px;
-  font-weight: bold;
   height: 2.3em;
   min-width: 0%;
   min-height: 0%;
 }
 /* Navbar Button end */
 
-
-
-/* RESPONSIVE START */
-
-@media (max-width: 1040px) {
-  .navbar-text-1 {
-    font-size: 1.6rem;
+/* Menu hamburguesa start*/
+@media (max-width: 788px) {
+  .navbar-text-global {
+    display: none;
   }
 
-  .navbar-btn, .navbar-btn-2 {
-    font-size: 1.6rem;
+  .navbar-logo-container {
+    margin: 1rem 1rem 1rem 0px;
+  }
+
+  .navbar-logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  .navbar-global-container {
+    height: 72px;
+  }
+
+  .navbar-global {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
-/* RESPONSIVE ENDS */
+/* Menu hamburguesa end*/
+
+/* Responsive 1400 x 900   */

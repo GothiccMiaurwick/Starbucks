@@ -4,15 +4,15 @@ import "./Starbucks-main.css";
 const StarbucksMain = ({ textoH, textoS, btn, img, colorSelected, des}) => {
   
   return (
-    <div className="main-container">
-      <div className="main-panel-container">
-        <div className="main-panel-pre">
+    <div className="block">
+      <div className="my-14">
+        <div className="box-border">
           <div className="main-panel">
-            <div className="main-panel-1">
+          <div className="block w-full">
               <img src={img} alt={des} />
             </div>
             <div
-              className="main-panel-2"
+              className="main-panel-2-extra main-panel-2 "
               style={{ backgroundColor: colorSelected }}
             >
               <div className="main-panel-text">
