@@ -1,5 +1,5 @@
 import "./Starbucks-navbar.css";
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom";
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import React, {useState} from "react";
 
@@ -31,13 +31,13 @@ export function StarbucksNavBar({}) {
             <div className="navbar-text-global">
               <div className="flex items-center uppercase">
                 <ul className="navbar-text-1">
-                  <Link spy={true} smooth={true} to="Menu">
+                  <Link to="/Menu"> 
                     <li className="my-4 py-4 text-2xl">Menu</li>
                   </Link>
-                  <Link spy={true} smooth={true} to="Rewards">
+                  <Link to="/Rewards">
                     <li className="my-4 py-4 ml-10  text-2xl">Rewards</li>
                   </Link>
-                  <Link spy={true} smooth={true} to="Gift Cards">
+                  <Link to="/Gift Cards">
                     <li className="my-4 py-4 ml-10  text-2xl">Gift Cards</li>
                   </Link>
                 </ul>

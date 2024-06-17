@@ -1,21 +1,15 @@
 import React from "react";
 import "./Starbucks-main.css";
 
-const StarbucksMain3 = ({ textoH, textoS, btn, img, colorSelected, sizeText, sizeTitle, des}) => {
+const StarbucksMain3 = ({ textoH, textoS, btn, img, colorSelected, des}) => {
   
-  return (
+   return (
     <div className="main-container">
       <div className="main-panel-container">
         <div className="main-panel-pre">
           <div className="main-panel">
-            <div className="main-panel-2-extra-2">
-              <img src={img} alt={des} />
-            </div>
-            <div
-              className="main-panel-2"
-              style={{ backgroundColor: colorSelected}}
-            >
-               <div className="main-panel-text">
+          <div className="main-panel-2" style={{ backgroundColor: colorSelected }}>
+              <div className="main-panel-text">
                 <h1 className="main-panel-text-h1">
                   <span>{textoH}</span>
                 </h1>
@@ -28,6 +22,9 @@ const StarbucksMain3 = ({ textoH, textoS, btn, img, colorSelected, sizeText, siz
                 </a>
                 </span>
               </div>
+            </div>
+            <div className="main-panel-1">
+              <img src={img} alt={des} />
             </div>
           </div>
         </div>
