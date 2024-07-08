@@ -2,7 +2,6 @@ import React from "react";
 import StarbucksMain2 from "../Starbucks-main/Starbucks-main";
 import StarbucksMain3 from "../Starbucks-main/Starbucks-main2";
 import StarbucksMain from "../Starbucks-main/Starbucks-main3";
-import { StarbucksNavBar } from "../Starbucks-navbar/Starbubucks-navbar";
 import StarbucksConditions from "../Starbucks-main/Starbucks-conditions";
 
 const Home = () => {

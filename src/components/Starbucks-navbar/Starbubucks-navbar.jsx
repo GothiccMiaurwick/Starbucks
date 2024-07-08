@@ -11,6 +11,8 @@ export function StarbucksNavBar({}) {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const [isActive, setIsActive] = useState(false)
   // Array containing navigation items
 
   return (
@@ -30,22 +32,28 @@ export function StarbucksNavBar({}) {
             {/* Menus text start*/}
             <div className="navbar-text-global">
               <div className="flex items-center uppercase">
-                <ul className="navbar-text-1">
-                  <Link to="/Menu"> 
-                    <li className="my-4 py-4 text-2xl">Menu</li>
+                <ul className="navbar-text-1 ">
+                  <Link onClick={() => setIsActive((a) => !a)} to="/Menu">
+                    <li className={`my-4 py-4 text-2xl hover:hoverVerde  ${isActive ? "pisoVerde" : " "}`}>
+                      Menu
+                    </li>
                   </Link>
                   <Link to="/Rewards">
-                    <li className="my-4 py-4 ml-10  text-2xl">Rewards</li>
+                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde">
+                      Rewards
+                    </li>
                   </Link>
                   <Link to="/Gift Cards">
-                    <li className="my-4 py-4 ml-10  text-2xl">Gift Cards</li>
+                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde">
+                      Gift Cards
+                    </li>
                   </Link>
                 </ul>
               </div>
               <div className="ml-auto flex justify-center">
                 <div className="navbar-text-lateral">
                   <span className="navbar-text-lateral-span">
-                    <a href="">
+                    <Link to={"/"}>
                       <div className="navbar-text-lateral-div">
                         <img
                           src="../public/marker.svg"
@@ -53,23 +61,23 @@ export function StarbucksNavBar({}) {
                           className="navbar-marker"
                         />
                       </div>
-                      <p className="navbar-marker-text text-2xl font-semibold">
+                      <p className="navbar-marker-text text-2xl font-semibold hover:hoverVerde">
                         Find a store
                       </p>
-                    </a>
+                    </Link>
                   </span>
-                  <a
-                    className="navbar-btn text-2xl bg-transparent font-semibold flex items-center"
-                    href="#"
+                  <Link
+                    to={"/"}
+                    className="navbar-btn text-2xl bg-transparent font-semibold flex items-center hover:hoverGris"
                   >
                     Sign in
-                  </a>
-                  <a
-                    className="navbar-btn-2 text-2xl flex bg-black font-semibold items-center"
-                    href="#"
+                  </Link>
+                  <Link
+                    to={"/"}
+                    className="navbar-btn-2 text-2xl flex bg-black font-semibold items-center hover:hoverBlanco"
                   >
                     Join now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -81,17 +89,13 @@ export function StarbucksNavBar({}) {
                 {nav ? (
                   <AiOutlineClose size={20} />
                 ) : (
-                  <AiOutlineMenu size={21} />
+                  <AiOutlineMenu size={20} />
                 )}
               </div>
 
               {/* Mobile Navigation Menu */}
               <div
-                className={
-                  nav
-                    ? " sb-mask sb-hamburgerNav__mask scr"
-                    : ""
-                }
+                className={nav ? " sb-mask sb-hamburgerNav__mask scr" : ""}
               ></div>
               <div>
                 <ul
@@ -102,48 +106,56 @@ export function StarbucksNavBar({}) {
                   }
                 >
                   {/* Mobile Navigation Items */}
-                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
-                    Menu
-                  </li>
-                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
-                    Rewards
-                  </li>
-                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
-                    Gift Cards
-                  </li>
-                  <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal ">
-                    <hr className="box-per h1-min p-2" />
-                  </li>
+                  <ul>
+                    <Link to="/">
+                      <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                        Menu
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                        Rewards
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal">
+                        Gift Cards
+                      </li>
+                    </Link>
+                    <li className="py-7 px-14 duration-500 cursor-pointer text-3xl font-normal ">
+                      <hr className="box-per h1-min p-2" />
+                    </li>
+                  </ul>
                   {/* Buttons */}
                   <div className="">
                     <div className="flex align-middle ">
-                      <a
+                      <Link
+                        to={"/"}
                         className="navbar-btn text-2xl bg-transparent font-semibold flex items-center ml-12"
-                        href="#"
                       >
                         Sign in
-                      </a>
-                      <a
+                      </Link>
+                      <Link
+                        to={"/"}
                         className="navbar-btn-2 text-2xl flex bg-black font-semibold items-center"
-                        href="#"
                       >
                         Join now
-                      </a>
+                      </Link>
                     </div>
                     <span className="navbar-text-lateral-span">
-                        <a className="ml-10 mt-5" href="">
-                          <div className="navbar-text-lateral-div">
-                            <img
-                              src="../public/marker.svg"
-                              alt="marker"
-                              className="navbar-marker"
-                            />
-                          </div>
-                          <p className="navbar-marker-text text-2xl font-semibold">
-                            Find a store
-                          </p>
-                        </a>
-                      </span>
+                      <Link className="ml-10 mt-5" to={"/"}>
+                        <div className="navbar-text-lateral-div">
+                          <img
+                            src="../public/marker.svg"
+                            alt="marker"
+                            className="navbar-marker"
+                          />
+                        </div>
+                        <p className="navbar-marker-text text-2xl font-semibold hover:hoverVerde">
+                          Find a store
+                        </p>
+                      </Link>
+                    </span>
                   </div>
                 </ul>
               </div>
