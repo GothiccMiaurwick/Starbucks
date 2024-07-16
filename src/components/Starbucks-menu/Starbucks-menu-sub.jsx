@@ -4,7 +4,7 @@ import React from "react";
 
 const StarbucksMenuSub = () => {
   return (
-    <div>
+    <div className="MenuGlobalContainer">
       {/* NavBar - Submenu */}
       <div className="pl-52 pr-16 fondoBlancoMedio box-per2">
         <nav>
@@ -26,8 +26,9 @@ const StarbucksMenuSub = () => {
       </div>
 
       {/* Menu Content */}
-      <div className="pl-131">
-        <div>
+      <div className="pl-131 !flex">
+        {/* left bar */}
+        <nav>
           <ul className="TitleBarUl">
             <li className="mt-6 TitleBar">
               <h2 className="text-black"> Drinks</h2>
@@ -73,6 +74,11 @@ const StarbucksMenuSub = () => {
               </ul>
             </li>
           </ul>
+        </nav>
+        {/* Rigth content */}
+        <div className="RigthMenuContainer">
+            <h1 className="font-bold MenuTextH1">Menu</h1>
+            <h2 className="font-bold MenuTextH2">Drinks</h2>
         </div>
       </div>
     </div>

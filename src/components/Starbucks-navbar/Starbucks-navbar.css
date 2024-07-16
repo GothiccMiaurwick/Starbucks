@@ -6,9 +6,10 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
-  width: fit-content;
+ 
 }
 
 body{
