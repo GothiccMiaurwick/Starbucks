@@ -4,7 +4,7 @@
   outline: 0;
   border: 0;
   text-decoration: none;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 .TextDecorationDown::after {
@@ -33,7 +33,7 @@
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.17px;
-  max-width:fit-content;
+  max-width: fit-content;
 }
 
 .TitleBarLi {
@@ -53,7 +53,7 @@
   padding-top: 4rem;
 }
 
-.MenuTextH1{
+.MenuTextH1 {
   font-size: 2.8rem;
   line-height: 1.385;
   padding-bottom: 4.8rem;
@@ -61,4 +61,120 @@
 
 .MenuTextH2 {
   font-size: 2.4rem;
+  padding-bottom: 16px;
+}
+
+.MenuTextHr {
+  padding-bottom: 32px;
+}
+
+/* Down menu Bar cards */
+
+.grillaInferior {
+  margin: 0 calc(0.8rem * -1);
+  padding: 0;
+  text-align: left;
+  display: block;
+}
+
+.grillaInferior img {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  border: 0;
+}
+
+.gridItem {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gridItem .grillaInferior {
+  padding: 0 0.8rem;
+}
+
+.mdLar {
+  width: 50%;
+}
+
+.mb3-2 {
+  margin-bottom: 3.2rem;
+}
+
+.iconContorno {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imgPosition {
+  border-radius: inherit;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.imgPositionFade {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.imgDec {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.imgFadeHide {
+  transition: opacity 0.3s ease-in;
+}
+
+.imgHideForFade {
+  opacity: 0;
+}
+
+.imgColorFadeDiv {
+  background-color: #d9d9d9;
+}
+
+.imgFadeBack {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.textCard {
+  width: 100%;
+  max-width: 100%;
+  color: #242121;
+  font-weight: 500;
+}
+
+.linkOverlay {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.hiddenVisually {
+  border: 0px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+  position: absolute !important;
+  width: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
 }

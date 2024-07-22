@@ -12,7 +12,7 @@ export function StarbucksNavBar({}) {
     setNav(!nav);
   };
 
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
   // Array containing navigation items
 
   return (
@@ -22,11 +22,15 @@ export function StarbucksNavBar({}) {
           <div className="navbar-global-container">
             <div className="navbar-logo-container">
               <div className="navbar-logo">
-                <img
-                  src="../public/starbucks.svg"
-                  alt="Starbucks icon"
-                  className="navbar-logo"
-                />
+                <Link to="/">
+                  <li>
+                    <img
+                      src="../public/starbucks.svg"
+                      alt="Starbucks icon"
+                      className="navbar-logo"
+                    />
+                  </li>
+                </Link>
               </div>
             </div>
             {/* Menus text start*/}
@@ -34,7 +38,11 @@ export function StarbucksNavBar({}) {
               <div className="flex items-center uppercase">
                 <ul className="navbar-text-1 ">
                   <Link onClick={() => setIsActive((a) => !a)} to="/Menu">
-                    <li className={`my-4 py-4 text-2xl hover:hoverVerde  ${isActive ? "pisoVerde" : " "}`}>
+                    <li
+                      className={`my-4 py-4 text-2xl hover:hoverVerde  ${
+                        isActive ? "pisoVerde" : " "
+                      }`}
+                    >
                       Menu
                     </li>
                   </Link>

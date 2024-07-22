@@ -74,6 +74,8 @@ body{
 .navbar-logo {
   width: 51px;
   height: 51px;
+  text-decoration: none;
+  list-style: none;
 }
 .navbar-marker {
   width: 32px;
