@@ -14,6 +14,10 @@
     text-decoration: none;
   }
 
+  .z-in {
+    z-index: inherit;
+  }
+
   .text19r {
     font-size: 1.9rem !important;
   }
@@ -64,7 +68,6 @@
 
   .pisoVerde {
     box-shadow: inset 0 -6px #00754a;
-    height: 120%;
   }
 
   .hoverVerde {

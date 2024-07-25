@@ -1,5 +1,5 @@
 import "./Starbucks-navbar.css";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import React, {useState} from "react";
 
@@ -11,9 +11,6 @@ export function StarbucksNavBar({}) {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  const [isActive, setIsActive] = useState(false);
-  // Array containing navigation items
 
   return (
     <>
@@ -36,26 +33,43 @@ export function StarbucksNavBar({}) {
             {/* Menus text start*/}
             <div className="navbar-text-global">
               <div className="flex items-center uppercase">
-                <ul className="navbar-text-1 ">
-                  <Link onClick={() => setIsActive((a) => !a)} to="/Menu">
-                    <li
-                      className={`my-4 py-4 text-2xl hover:hoverVerde  ${
-                        isActive ? "pisoVerde" : " "
-                      }`}
-                    >
+                <ul className="navbar-text-1">
+                  <NavLink
+                    to="/menu"
+                    className={({isActive}) => [
+                      isActive
+                        ? "pisoVerde flex items-center"
+                        : "flex items-center",
+                    ]}
+                  >
+                    <li className="my-4 py-4 text-2xl hover:hoverVerde items-center">
                       Menu
                     </li>
-                  </Link>
-                  <Link to="/Rewards">
-                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde">
+                  </NavLink>
+                  <NavLink
+                    to="/Rewards"
+                    className={({isActive}) => [
+                      isActive
+                        ? "pisoVerde flex items-center"
+                        : "flex items-center",
+                    ]}
+                  >
+                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde items-center">
                       Rewards
                     </li>
-                  </Link>
-                  <Link to="/Gift Cards">
-                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde">
+                  </NavLink>
+                  <NavLink
+                    to="/Gift Cards"
+                    className={({isActive}) => [
+                      isActive
+                        ? "pisoVerde flex items-center"
+                        : "flex items-center",
+                    ]}
+                  >
+                    <li className="my-4 py-4 ml-10 text-2xl hover:hoverVerde items-center">
                       Gift Cards
                     </li>
-                  </Link>
+                  </NavLink>
                 </ul>
               </div>
               <div className="ml-auto flex justify-center">
