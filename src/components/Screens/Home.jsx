@@ -1,8 +1,8 @@
 import React from "react";
-import StarbucksMain2 from "../Starbucks-main/Starbucks-main";
+import StarbucksMain2 from "../Starbucks-main/Main-st";
 import StarbucksMain3 from "../Starbucks-main/Starbucks-main2";
 import StarbucksMain from "../Starbucks-main/Starbucks-main3";
-import StarbucksConditions from "../Starbucks-main/Starbucks-conditions";
+import StarbucksConditions from "../Starbucks-main/Condition";
 
 const Home = () => {
   return (
@@ -60,8 +60,7 @@ const Home = () => {
         }
       />
 
-<StarbucksConditions />
-
+      <StarbucksConditions />
     </div>
   );
 };

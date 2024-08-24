@@ -1,19 +1,18 @@
 import React from "react";
-import "./Starbucks-main.css";
+import "./Main.css";
 
-const StarbucksMain = ({ textoH, textoS, btn, img, colorSelected, des}) => {
-  
+const StarbucksMain = ({textoH, textoS, btn, img, colorSelected, des}) => {
   return (
     <div className="block">
       <div className="my-14">
         <div className="box-border">
           <div className="main-panel">
-          <div className="block w-full">
+            <div className="block w-full">
               <img src={img} alt={des} />
             </div>
             <div
               className="main-panel-2-extra main-panel-2 "
-              style={{ backgroundColor: colorSelected }}
+              style={{backgroundColor: colorSelected}}
             >
               <div className="main-panel-text">
                 <h1 className="main-panel-text-h1">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Starbucks-main.css";
+import "./Main.css";
 
 const StarbucksConditions = () => {
   return (
@@ -25,7 +25,10 @@ const StarbucksConditions = () => {
                 as marked or posted in stores. May not be combined with other
                 offers, discounts, or promotions. See DoorDash terms and
                 conditions at{" "}
-                <a className="condition-text-link" href="https://help.doordash.com/consumers/s/article/offer-terms-conditions">
+                <a
+                  className="condition-text-link"
+                  href="https://help.doordash.com/consumers/s/article/offer-terms-conditions"
+                >
                   help.doordash.com/consumers/s/article/offer-terms-conditions
                 </a>
                 .

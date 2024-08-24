@@ -108,37 +108,37 @@ const StarbucksFooter = () => {
                     <ul className="dropdown__sup">
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Culture and Values
+                          Culture and Values
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Inclusion, Diversity, and Equity
+                          Inclusion, Diversity, and Equity
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        College Achievement Plan
+                          College Achievement Plan
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Alumni Community
+                          Alumni Community
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        U.S. Careers
+                          U.S. Careers
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        International Careers
+                          International Careers
                         </a>
                       </li>
                     </ul>
@@ -173,19 +173,19 @@ const StarbucksFooter = () => {
                     <ul className="dropdown__sup">
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        People
+                          People
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Planet
+                          Planet
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Environmental and Social Impact Reporting
+                          Environmental and Social Impact Reporting
                         </a>
                       </li>
                     </ul>
@@ -214,7 +214,9 @@ const StarbucksFooter = () => {
               <ul className="dropdown" id="menu">
                 <li className="dropdown__list">
                   <a href="#" className="dropdown__link">
-                    <span className="dropdown__span">For Business Partners</span>
+                    <span className="dropdown__span">
+                      For Business Partners
+                    </span>
                     <img src="/public/down.svg" className="dropdown__arrow" />
                     <input type="checkbox" className="dropdown__check" />
                   </a>
@@ -223,25 +225,25 @@ const StarbucksFooter = () => {
                     <ul className="dropdown__sup">
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Landlord Support Center
+                          Landlord Support Center
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Suppliers
+                          Suppliers
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Corporate Gift Card Sales
+                          Corporate Gift Card Sales
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Office and Foodservice Coffee
+                          Office and Foodservice Coffee
                         </a>
                       </li>
                     </ul>
@@ -280,19 +282,19 @@ const StarbucksFooter = () => {
                     <ul className="dropdown__sup">
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Order on the App
+                          Order on the App
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Order on the Web
+                          Order on the Web
                         </a>
                       </li>
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Delivery
+                          Delivery
                         </a>
                       </li>
 
@@ -304,7 +306,7 @@ const StarbucksFooter = () => {
 
                       <li className="dropdown__li">
                         <a className="dropdown__anchor" href="#">
-                        Explore and Find Coffee for Home
+                          Explore and Find Coffee for Home
                         </a>
                       </li>
                     </ul>

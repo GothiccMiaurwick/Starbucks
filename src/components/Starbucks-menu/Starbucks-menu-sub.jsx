@@ -598,6 +598,34 @@ const StarbucksMenuSub = () => {
       </div>
 
       {/* Green Footer */}
+
+      <div className="bottomDraw">
+        <div></div>
+        <div className="menuPaddingRight menuPaddingLeft !items-center !flex w-full !justify-between bg-menuDownGreen text-white containerMenuH">
+          <div className="!justify-between !flex innerContent">
+            <div className="!flex !items-center pickerContainer lg-mb4 lg-mt4 colorC">
+              <a href="" className="containerLinkGf lg-pb2 pb1">
+                <p className="text-2xl">
+                  <span className="colorTextWhiteSoft ">
+                    For item availability
+                  </span>
+                  <strong className="text-white !block font-bold">
+                    Choose a store
+                  </strong>
+                </p>
+                <img src="/public/down.svg" className="" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <span
+              className="bagIcon icon-[f7--bag]"
+              role="img"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
