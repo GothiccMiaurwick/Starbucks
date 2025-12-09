@@ -23,7 +23,7 @@ export function StarbucksNavBar({}) {
                   <li>
                     <img
                       src="../public/starbucks.svg"
-                      alt="Starbucks icon"
+                      alt="Starbucks - Ir a inicio"
                       className="navbar-logo"
                     />
                   </li>
@@ -79,8 +79,9 @@ export function StarbucksNavBar({}) {
                       <div className="navbar-text-lateral-div">
                         <img
                           src="../public/marker.svg"
-                          alt="marker"
+                          alt=""
                           className="navbar-marker"
+                          aria-hidden="true"
                         />
                       </div>
                       <p className="navbar-marker-text text-2xl font-semibold hover:hoverVerde">

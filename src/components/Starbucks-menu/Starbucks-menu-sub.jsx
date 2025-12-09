@@ -613,7 +613,7 @@ const StarbucksMenuSub = () => {
                     Choose a store
                   </strong>
                 </p>
-                <img src="/public/down.svg" className="" />
+                <img src="/public/down.svg" className="" alt="Seleccionar tienda" />
               </a>
             </div>
           </div>

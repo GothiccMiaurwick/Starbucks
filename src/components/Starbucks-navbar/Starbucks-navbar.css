@@ -75,11 +75,30 @@ body {
   height: 51px;
   text-decoration: none;
   list-style: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+.navbar-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .navbar-marker {
   width: 32px;
   height: 32px;
   padding: 0px 8.5px 0px 0px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navbar-marker img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 /* Navbr icons end */
 

@@ -116,6 +116,15 @@ ul {
 
 .footer-nav-ul-icons-link img {
   width: 32px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dropdown__arrow {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* nav icons ends */
@@ -305,6 +314,45 @@ li {
 
   .footer-global-nav {
     padding: 0px 25.5px;
+  }
+  
+  .footer-nav-ul-icons-link img {
+    width: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-global-nav {
+    padding: 0px 20px;
+  }
+  
+  .footer-nav-ul-icons-link img {
+    width: 24px;
+  }
+  
+  .footer-global-ul-icons {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-global-ul-icons li {
+    margin-right: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-global-nav {
+    padding: 0px 15px;
+  }
+  
+  .footer-nav-ul-icons-link img {
+    width: 20px;
+  }
+  
+  .dropdown__arrow {
+    width: 16px;
+    height: auto;
   }
 }
 

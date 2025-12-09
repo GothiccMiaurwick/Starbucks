@@ -80,10 +80,15 @@
 .grillaInferior img {
   height: auto;
   max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 img {
   border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .gridItem {
@@ -132,6 +137,8 @@ img {
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imgFadeHide {
@@ -210,3 +217,79 @@ img {
 }
 
 /* Responsive design  */
+@media (max-width: 1024px) {
+  .RigthMenuContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .grillaInferior {
+    margin: 0 calc(0.4rem * -1);
+  }
+  
+  .mdLar {
+    width: 100%;
+  }
+  
+  .MenuTextH1 {
+    font-size: 2.4rem;
+    padding-bottom: 3rem;
+  }
+  
+  .MenuTextH2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .RigthMenuContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .MenuTextH1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .MenuTextH2 {
+    font-size: 1.8rem;
+  }
+  
+  .gridItem {
+    margin-bottom: 2rem;
+  }
+  
+  .iconContorno {
+    position: relative;
+    padding-bottom: 100%;
+  }
+  
+  .imgDec {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .RigthMenuContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .MenuTextH1 {
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .MenuTextH2 {
+    font-size: 1.5rem;
+  }
+  
+  .textCard {
+    font-size: 1.1rem;
+  }
+}

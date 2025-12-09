@@ -6,7 +6,12 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
   </React.StrictMode>
 );
+
+// Inicializar AOS después de que el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.AOS) {
+    window.AOS.init();
+  }
+});
