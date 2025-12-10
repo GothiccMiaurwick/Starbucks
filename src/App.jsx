@@ -20,7 +20,7 @@ function Layout() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Starbucks">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />

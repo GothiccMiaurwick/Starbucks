@@ -322,32 +322,32 @@ const StarbucksFooter = () => {
           <ul className="footer-global-ul-icons">
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Spotify">
-                <img src="./public/spotify.png" alt="Spotify" />
+                <img src="/spotify.png" alt="Spotify" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Facebook">
-                <img src="./public/facebook.png" alt="Facebook" />
+                <img src="/facebook.png" alt="Facebook" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Pinterest">
-                <img src="./public/pinterest.png" alt="Pinterest" />
+                <img src="/pinterest.png" alt="Pinterest" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Instagram">
-                <img src="./public/instagram.png" alt="Instagram" />
+                <img src="/instagram.png" alt="Instagram" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro canal de YouTube">
-                <img src="./public/youtube.png" alt="YouTube" />
+                <img src="/youtube.png" alt="YouTube" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Twitter">
-                <img src="./public/twitter.png" alt="Twitter" />
+                <img src="/twitter.png" alt="Twitter" />
               </a>
             </li>
           </ul>
