@@ -22,7 +22,7 @@ export function StarbucksNavBar({}) {
                 <Link to="/">
                   <li>
                     <img
-                      src="/starbucks.svg"
+                      src="./starbucks.svg"
                       alt="Starbucks - Ir a inicio"
                       className="navbar-logo"
                     />
@@ -78,7 +78,7 @@ export function StarbucksNavBar({}) {
                     <Link to={"/"}>
                       <div className="navbar-text-lateral-div">
                         <img
-                          src="/marker.svg"
+                          src="./marker.svg"
                           alt=""
                           className="navbar-marker"
                           aria-hidden="true"
@@ -169,7 +169,7 @@ export function StarbucksNavBar({}) {
                       <Link className="ml-10 mt-5" to={"/"}>
                         <div className="navbar-text-lateral-div">
                           <img
-                            src="/marker.svg"
+                            src="./marker.svg"
                             alt="marker"
                             className="navbar-marker"
                           />

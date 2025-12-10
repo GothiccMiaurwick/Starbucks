@@ -91,7 +91,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/8.jpg"
+                            src="./8.jpg"
                             alt="Iced Energy"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -115,7 +115,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/9.jpg"
+                            src="./9.jpg"
                             alt="Hot Coffees"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -139,7 +139,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/10.jpg"
+                            src="./10.jpg"
                             alt="Cold Coffees"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -163,7 +163,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/11.jpg"
+                            src="./11.jpg"
                             alt="Starbucks Refreshers® Beverages"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -191,7 +191,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/12.jpg"
+                            src="./12.jpg"
                             alt="Frappuccino® Blended Beverages"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -219,7 +219,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/13.jpg"
+                            src="./13.jpg"
                             alt="Iced Tea and Lemonade"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -245,7 +245,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/14.jpg"
+                            src="./14.jpg"
                             alt="Hot Teas"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -269,7 +269,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/15.jpg"
+                            src="./15.jpg"
                             alt="Milk, Juice & More"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -293,7 +293,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/16.jpg"
+                            src="./16.jpg"
                             alt="Bottled Beverages"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -324,7 +324,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/17.jpg"
+                            src="./17.jpg"
                             alt="Hot Breakfast"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -348,7 +348,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/18.jpg"
+                            src="./18.jpg"
                             alt="Oatmeal & Yogurt"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -372,7 +372,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/19.jpg"
+                            src="./19.jpg"
                             alt="Bakery"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -396,7 +396,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/20.jpg"
+                            src="./20.jpg"
                             alt="Lunch"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -420,7 +420,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/21.jpg"
+                            src="./21.jpg"
                             alt="Snacks & Sweets"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -451,7 +451,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/22.jpg"
+                            src="./22.jpg"
                             alt="Whole Bean"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -475,7 +475,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/23.jpg"
+                            src="./23.jpg"
                             alt="VIA® Instant"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -506,7 +506,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/24.jpg"
+                            src="./24.jpg"
                             alt="Cold Cups"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -530,7 +530,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/25.jpg"
+                            src="./25.jpg"
                             alt="Tumblers"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -554,7 +554,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/26.jpg"
+                            src="./26.jpg"
                             alt="Mugs"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -578,7 +578,7 @@ const StarbucksMenuSub = () => {
                         <div className="!relative h-full">
                           <img
                             className="imgDec imgPosition"
-                            src="/27.jpg"
+                            src="./27.jpg"
                             alt="Other"
                           />
                           <div className="imgFadeHide imgColorFadeDiv imgFadeBack imgHideForFade"></div>
@@ -613,7 +613,7 @@ const StarbucksMenuSub = () => {
                     Choose a store
                   </strong>
                 </p>
-                <img src="/public/down.svg" className="" alt="Seleccionar tienda" />
+                <img src="./down.svg" className="" alt="Seleccionar tienda" />
               </a>
             </div>
           </div>

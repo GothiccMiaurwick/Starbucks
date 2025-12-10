@@ -26,7 +26,7 @@ const StarbucksFooter = () => {
                 <li className="dropdown__list">
                   <a href="#" className="dropdown__link">
                     <span className="dropdown__span">About Us</span>
-                    <img src="/public/down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
+                    <img src="./down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
                     <input type="checkbox" className="dropdown__check" />
                   </a>
 
@@ -100,7 +100,7 @@ const StarbucksFooter = () => {
                 <li className="dropdown__list">
                   <a href="#" className="dropdown__link">
                     <span className="dropdown__span">Careers</span>
-                    <img src="/public/down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
+                    <img src="./down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
                     <input type="checkbox" className="dropdown__check" />
                   </a>
 
@@ -217,7 +217,7 @@ const StarbucksFooter = () => {
                     <span className="dropdown__span">
                       For Business Partners
                     </span>
-                    <img src="/public/down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
+                    <img src="./down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
                     <input type="checkbox" className="dropdown__check" />
                   </a>
 
@@ -274,7 +274,7 @@ const StarbucksFooter = () => {
                 <li className="dropdown__list">
                   <a href="#" className="dropdown__link">
                     <span className="dropdown__span">Order and Pick Up</span>
-                    <img src="/public/down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
+                    <img src="./down.svg" className="dropdown__arrow" alt="" aria-hidden="true" />
                     <input type="checkbox" className="dropdown__check" />
                   </a>
 
@@ -322,32 +322,32 @@ const StarbucksFooter = () => {
           <ul className="footer-global-ul-icons">
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Spotify">
-                <img src="/spotify.png" alt="Spotify" />
+                <img src="./spotify.png" alt="Spotify" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Facebook">
-                <img src="/facebook.png" alt="Facebook" />
+                <img src="./facebook.png" alt="Facebook" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Pinterest">
-                <img src="/pinterest.png" alt="Pinterest" />
+                <img src="./pinterest.png" alt="Pinterest" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Instagram">
-                <img src="/instagram.png" alt="Instagram" />
+                <img src="./instagram.png" alt="Instagram" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro canal de YouTube">
-                <img src="/youtube.png" alt="YouTube" />
+                <img src="./youtube.png" alt="YouTube" />
               </a>
             </li>
             <li>
               <a className="footer-nav-ul-icons-link" href="" aria-label="Visitar nuestro perfil de Twitter">
-                <img src="/twitter.png" alt="Twitter" />
+                <img src="./twitter.png" alt="Twitter" />
               </a>
             </li>
           </ul>
